@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+
+}
+.intro .text h1{
+    font-family: "Dm Serif Display", serif;
+}
+
+
+/* this nav bar */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px 160px;
+    
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li{
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:hsl(273, 4%, 51%);
+}
+header nav ul li a:hover{
+    color: hsl(256, 26%, 20%);
+    transition: 0.5s;
+}
+header nav button{
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+header nav button:hover{
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    transition: 0.7s;
+}
+
+/* one section */
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+    margin-bottom: 100px;
+    width: 100%;
+    gap:30px;
+    background-color: hsl(257, 27%, 26%);
+    position: relative;
+    
+}
+.intro::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 40%;
+    /* pointer-events: none; */
+    z-index: 1;
+}
+.intro::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 25%;
+    height: 250px;
+    background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    pointer-events: none;
+   
+}
+.intro .text{
+    margin: 10px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.intro .text::before{
+    content: "";
+    display: block;
+    width: 140px;
+    height: 5px;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 40px;
+}
+.intro .text h1{
+    font-size: 50px;
+    color: white;
+    width: 400px;
+}
+.intro .text p{
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    width: 400px;
+}
+.intro .text .btn{
+    width: 135px;
+    padding: 8px 16px;
+    border: none;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.intro img{
+    width: 30%;
+    position: relative;
+    right: 200px;
+    top: 100px;
+}
+
+/* start difrant */
+.difrant h1::before{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-color: hsl(273, 4%, 51%);
+    margin-bottom: 40px;
+}
+.difrant{
+    width: 100%;
+    margin: auto;
+    padding: 60px 0;
+    height: 100vh;
+}
+
+.difrant h1{
+    font-size: 80px;
+    padding-left: 95px;
+
+}
+
+.difrant .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+    height: 50vh;
+}
+
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 30px;
+}
+.card p{
+    color: hsl(273, 4%, 51%);
+}
+.card img{
+    width: 70px;
+}
+
+.work{
+    height: 150px;
+    margin:  100px;
+    background-color: hsl(257, 27%, 26%); 
+    position: relative;
+    overflow: hidden;
+}
+.work::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    pointer-events: none;
+}
+.find{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.find h1{
+    color: hsl(0, 0%, 98%);
+    font-size: 35px;
+}
+
+.find .btn-work{
+    padding: 5px 10px;
+    border: none;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* start sochail media */
+.contant{
+    /* height: 80vh; */
+    /* width: 100%; */
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    overflow: hidden;
+}
+.contant::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 100%;
+    pointer-events: none;
+}
+.contant .sochayl-medya{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.sochayl-medya{
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid hsl(273, 4%, 51%);
+}
+.sochayl-medya .icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sochayl-medya .icons img:hover{
+    cursor: pointer;
+    background-color: hsl(256, 26%, 20%);
+    transition: 0.5s;
+}
+.All-titel{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 100px;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.All-titel .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+}
+.All-titel .card .titel{
+    font-size: 15px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+.All-titel .card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card ul li{
+    list-style: none;
+    color: hsl(273, 4%, 51%);
+    font-size: 15px;
+    cursor: pointer;
+}
+.card ul li:hover{
+    color: hsl(256, 26%, 20%);
+    transition: 0.5s;
+}
+
